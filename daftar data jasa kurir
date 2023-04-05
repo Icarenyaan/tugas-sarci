@@ -1,0 +1,94 @@
+<?php
+require'koneksi.php'
+
+$mahasiswa = query("ELECT*FROM mahasiswa");
+?>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content=IE=edge">
+    <meta name="viewport"content="width=device-width, initial-scale=1.0">
+    <title>Daftar Data jasa</title>
+  </head>
+
+  <body>
+    <h1>Daftar Data pesanan paket barang</h1>
+    <table border="1" cellpadding="5" cellspading="0">
+        <tr>
+            <th>no</th>
+            <th>Gambar</th>
+            <th>nama paket</th>
+            <th>nama paket</th>
+            <th>nama paket</th>
+            <th>nama paket</th>
+            <th>nama paket</th>
+            <th>Ket</th>
+            <th>Harga jasa pengiriman</th>
+            <th>Aksi</th>
+</tr>
+ <?php $i =0;?>
+ <?php foreach($Daftar paket barang non cod):?>
+<tr>
+    <td><?=$i;?></td>
+    <td><img src="kurirbarang.jpg"width="200px"></td>
+    <td>Sepatu</td>
+    <td>Tas</td>
+    <td>Baju</td>
+    <td>make up</td>
+    <td>celana</td>
+    <td>noncod</td>
+    <td>120.000</td>
+    <td>
+  <a href="">Ubah</a>
+  <a href="">Hapus</a>
+ </td>
+ </tr>
+ <?php $i ++;?>
+ <?php endforeach;?>
+ </table>
+ </body>
+ 
+ <body>
+    <h1>Daftar Data Goo food</h1>
+    <table border="1" cellpadding="5" cellspading="0">
+        <tr>
+            <th>no</th>
+            <th>Gambar</th>
+            <th>menu</th>
+            <th>menu</th>
+            <th>menu</th>
+            <th>menu</th>
+            <th>menu</th>
+            <th>Ket</th>
+            <th>Harga jasa pengiriman</th>
+            <th>Aksi</th>
+</tr>
+ <?php $i =0;?>
+ <?php foreach($Daftar paket barang):?>
+<tr>
+    <td><?=$i;?></td>
+    <td><img src="kurirfood.jpg"width="200px"></td>
+    <td>Kfc</td>
+    <td>Nasi padang </td>
+    <td>aym geprek</td>
+    <td>martabak</td>
+    <td>pitza</td>
+    <td>100.000 perbarang</td>
+    <td>30.000</td>
+    <td>
+  <a href="">Ubah</a>
+  <a href="">Hapus</a>
+ </td>
+ </tr>
+ <?php $i ++;?>
+ <?php endforeach;?>
+ </table>
+ </body>
+ 
+ </html>
+
+ 
+
+ 
